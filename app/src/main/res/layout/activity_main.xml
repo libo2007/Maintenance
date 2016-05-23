@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fragment_conainer"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></FrameLayout>
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_marginLeft="1.5dp"
+                android:id="@+id/tab1_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/home_userselected" />
+
+            <TextView
+                android:id="@+id/tab1_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_tab_txt_margin_top"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
+                android:text="任务"
+                android:textColor="@color/textview_blue"
+                android:textSize="@dimen/main_tab_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab2_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/home_messagenormal" />
+
+            <TextView
+                android:id="@+id/tab2_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
+                android:text="案情"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/main_tab_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab3_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/home_findnormal" />
+
+            <TextView
+                android:id="@+id/tab3_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
+                android:text="考勤"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/main_tab_txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/tab4_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/home_morenormal" />
+
+            <TextView
+                android:id="@+id/tab4_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
+                android:text="我的"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/main_tab_txt_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_edit_height">45dp</dimen>
+    <dimen name="login_margin_left_right">20dp</dimen>
+    <dimen name="login_line_margin_top">18dp</dimen>
+    <dimen name="main_tab_txt_size">10dp</dimen>
+    <dimen name="main_tab_txt_margin_bottom">4dp</dimen>
+    <dimen name="main_tab_txt_margin_top">6dp</dimen>
+    <dimen name="main_tab_height">52dp</dimen>
+    <dimen name="more_margin_top">26dp</dimen>
+    <dimen name="more_line_height">44dp</dimen>
+    <dimen name="more_img_margin">10dp</dimen>
+    <dimen name="wifi_text_margin">8dp</dimen>
+    <dimen name="listview_item_1_line_height">45dp</dimen>
+    <dimen name="listview_item_2_line_height">60dp</dimen>
+    <dimen name="listview_side_margin">8dp</dimen>
+    <dimen name="title_left_item_width">40dp</dimen>
+    <dimen name="app_radio_stroke_size">1dp</dimen>
+    <dimen name="app_radio_padding">3dp</dimen>
+    <dimen name="app_radio_width">75dp</dimen>
+    <dimen name="time_width">80dp</dimen>
+    <dimen name="diver_height">0.5dp</dimen>
+    <dimen name="btn_height">38dp</dimen>
+
+</resources>

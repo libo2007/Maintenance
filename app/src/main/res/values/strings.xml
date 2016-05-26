@@ -4,4 +4,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_task">任务</string>
+    <string name="my_notice">通知</string>
+    <string name="my_atten">考勤</string>
+    <string name="my_personal">个人</string>
 </resources>

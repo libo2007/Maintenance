@@ -40,7 +40,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
-                android:text="任务"
+                android:text="@string/my_task"
                 android:textColor="@color/textview_blue"
                 android:textSize="@dimen/main_tab_txt_size" />
         </RelativeLayout>
@@ -66,7 +66,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
-                android:text="案情"
+                android:text="@string/my_notice"
                 android:textColor="@color/txt_black"
                 android:textSize="@dimen/main_tab_txt_size" />
         </RelativeLayout>
@@ -92,7 +92,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
-                android:text="考勤"
+                android:text="@string/my_atten"
                 android:textColor="@color/txt_black"
                 android:textSize="@dimen/main_tab_txt_size" />
         </RelativeLayout>
@@ -117,7 +117,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/main_tab_txt_margin_bottom"
-                android:text="我的"
+                android:text="@string/my_personal"
                 android:textColor="@color/txt_black"
                 android:textSize="@dimen/main_tab_txt_size" />
         </RelativeLayout>

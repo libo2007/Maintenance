@@ -1,20 +1,13 @@
 package com.qidi.maintenance.activity;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.qidi.maintenance.R;
 import com.qidi.maintenance.fragment.AttendanceFragment;
-import com.qidi.maintenance.fragment.CaseFragment;
+import com.qidi.maintenance.fragment.NoticeFragment;
 import com.qidi.maintenance.fragment.PersonalFragment;
 import com.qidi.maintenance.fragment.TaskFragment;
 
@@ -61,6 +54,21 @@ public class MainActivity extends BaseActivity {
 
         tab4 = findViewById(R.id.tab4);
         tab4.setOnClickListener(new FourClickListener());
+
+        fragmentManager.beginTransaction().replace(R.id.fragment_conainer, new TaskFragment()).commit();
+        mTabImg1.setImageResource(R.mipmap.home_userselected);
+        mTabTxt1.setTextColor(getResources().getColor(
+                R.color.textview_blue));
+
+        mTabImg2.setImageResource(R.mipmap.home_messagenormal);
+        mTabTxt2.setTextColor(getResources().getColor(
+                R.color.txt_black));
+        mTabImg3.setImageResource(R.mipmap.home_findnormal);
+        mTabTxt3.setTextColor(getResources().getColor(
+                R.color.txt_black));
+        mTabImg4.setImageResource(R.mipmap.home_morenormal);
+        mTabTxt4.setTextColor(getResources().getColor(
+                R.color.txt_black));
     }
 
     @Override
@@ -91,7 +99,7 @@ public class MainActivity extends BaseActivity {
     private class TwoClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            fragmentManager.beginTransaction().replace(R.id.fragment_conainer, new CaseFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.fragment_conainer, new NoticeFragment()).commit();
             mTabImg1.setImageResource(R.mipmap.home_usernormal);
             mTabTxt1.setTextColor(getResources().getColor(
                     R.color.txt_black));

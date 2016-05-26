@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.qidi.maintenance.R;
+import com.qidi.maintenance.widget.TitleBar;
 
 /**
  * 考情fragent
@@ -18,6 +19,9 @@ public class AttendanceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_attendance, null);
+        TitleBar titleBar = new TitleBar(getActivity(),view);
+        titleBar.setTitle(R.string.my_atten);
+        titleBar.setBackVisible(false);
         return view;
     }
 

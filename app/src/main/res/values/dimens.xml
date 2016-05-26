@@ -25,4 +25,12 @@
     <dimen name="diver_height">0.5dp</dimen>
     <dimen name="btn_height">38dp</dimen>
 
+    <dimen name="txt_normal_size">14dp</dimen>
+    <dimen name="txt_normal_small_size">12dp</dimen>
+    <dimen name="txt_normal_bg_size">16dp</dimen>
+    <dimen name="txt_normal_bg_more_size">18dp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <dimen name="btn_padding">10dp</dimen>
+    <dimen name="btn_inner_padding">5dp</dimen>
+    <dimen name="radius">5dp</dimen>
 </resources>

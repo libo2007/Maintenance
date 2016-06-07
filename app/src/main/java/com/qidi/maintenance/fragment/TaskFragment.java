@@ -8,9 +8,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.qidi.maintenance.R;
 import com.qidi.maintenance.activity.NoticeDetailActivity;
+import com.qidi.maintenance.activity.TaskAddActivity;
 import com.qidi.maintenance.adapter.TaskAdapter;
 import com.qidi.maintenance.entity.TaskEntity;
 import com.qidi.maintenance.widget.TitleBar;
@@ -28,6 +31,11 @@ public class TaskFragment extends Fragment {
     private ZrcListView mListView;
     private TaskAdapter mAdapter;
     private List<TaskEntity> mList;
+
+    private ImageView iv_addtask;
+    private TextView tv_select_doing;
+    private TextView tv_select_all;
+    private TextView tv_select_over;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -65,6 +73,42 @@ public class TaskFragment extends Fragment {
             }
         });
         mListView.refresh();
+
+        iv_addtask = (ImageView) view.findViewById(R.id.iv_addtask);
+        iv_addtask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), TaskAddActivity.class);
+                startActivity(it);
+            }
+        });
+        tv_select_all = (TextView) view.findViewById(R.id.tv_select_all);
+        tv_select_all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tv_select_all.setTextColor(getResources().getColor(R.color.main_color));
+                tv_select_doing.setTextColor(getResources().getColor(R.color.txt_grey));
+                tv_select_over.setTextColor(getResources().getColor(R.color.txt_grey));
+            }
+        });
+        tv_select_doing = (TextView) view.findViewById(R.id.tv_select_doing);
+        tv_select_doing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tv_select_all.setTextColor(getResources().getColor(R.color.txt_grey));
+                tv_select_doing.setTextColor(getResources().getColor(R.color.main_color));
+                tv_select_over.setTextColor(getResources().getColor(R.color.txt_grey));
+            }
+        });
+        tv_select_over = (TextView) view.findViewById(R.id.tv_select_over);
+        tv_select_over.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tv_select_all.setTextColor(getResources().getColor(R.color.txt_grey));
+                tv_select_doing.setTextColor(getResources().getColor(R.color.txt_grey));
+                tv_select_over.setTextColor(getResources().getColor(R.color.main_color));
+            }
+        });
         return view;
     }
 

@@ -7,7 +7,7 @@
     <color name="blue">#47A1FE</color>
     <color name="yellow">#FEA303</color>
     <color name="black">#000000</color>
-    <color name="main_color">#36c709</color>
+    <color name="main_color">#1AACBB</color>
     <color name="main_sub_color">#f9dd5b</color>
     <color name="main_sub_press_color">#fcd628</color>
     <color name="line_color">#D9D9D9</color>
@@ -34,5 +34,5 @@
     <color name="block_column_1">#ff0fabff</color>
     <color name="block_column_2">#ffdf1831</color>
     <color name="block_column_3">#ff009939</color>
-    <color name="textview_blue">#3AA3EE</color>
+    <color name="textview_blue">#1AACBB</color>
 </resources>

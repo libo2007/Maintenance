@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:padding="@dimen/btn_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="个人考勤记录表"
+            android:textSize="@dimen/txt_normal_bg_size"
+           style="@style/txt_black_style" />
+
+        <TextView
+            android:layout_marginTop="@dimen/btn_margin"
+            android:text="考勤结算时间"
+            style="@style/txt_black_style" />
+        <TextView
+            android:layout_marginTop="@dimen/btn_margin"
+            android:text="考勤结算时间"
+            style="@style/txt_black_style" />
+        <TextView
+            android:layout_marginTop="@dimen/btn_margin"
+            android:text="考勤结算时间"
+            style="@style/txt_black_style" />
+        <TextView
+            android:layout_marginTop="@dimen/btn_margin"
+            android:text="考勤结算时间"
+            style="@style/txt_black_style" />
+
+    </LinearLayout>
+
+</LinearLayout>

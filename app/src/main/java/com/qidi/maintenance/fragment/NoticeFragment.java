@@ -1,6 +1,7 @@
 package com.qidi.maintenance.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.qidi.maintenance.R;
+import com.qidi.maintenance.activity.NoticeDetailActivity;
 import com.qidi.maintenance.adapter.NoticeAdapter;
 import com.qidi.maintenance.entity.NoticeEntity;
 import com.qidi.maintenance.widget.TitleBar;
@@ -40,6 +42,13 @@ public class NoticeFragment extends Fragment {
         mAdapter = new NoticeAdapter(getActivity(),mList);
         mListView.setAdapter(mAdapter);
 
+        mListView.setOnItemClickListener(new ZrcListView.OnItemClickListener() {
+            @Override
+            public void onItemClick(ZrcListView parent, View view, int position, long id) {
+                Intent it = new Intent(getActivity(), NoticeDetailActivity.class);
+                startActivity(it);
+            }
+        });
         mListView.setOnRefreshStartListener(new ZrcListView.OnStartListener() {
             @Override
             public void onStart() {
@@ -73,7 +82,7 @@ public class NoticeFragment extends Fragment {
               mListView.setRefreshSuccess();
               mListView.startLoadMore(); // 开启LoadingMore功能
           }
-      }, 5000);
+      }, 500);
     }
 
     private void loadMore(){

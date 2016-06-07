@@ -8,4 +8,5 @@
     <string name="my_notice">通知</string>
     <string name="my_atten">考勤</string>
     <string name="my_personal">个人</string>
+    <string name="title_activity_notice_detail">NoticeDetailActivity</string>
 </resources>

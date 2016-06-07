@@ -2,23 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
     android:orientation="horizontal">
 
 
-    <TextView
-        android:id="@+id/tv_content"
-        style="@style/txt_black_style"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_marginRight="@dimen/btn_margin"
+        android:padding="@dimen/btn_inner_padding"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:ellipsize="end"
-        android:padding="@dimen/btn_padding"
-        android:singleLine="true"
-        android:text="内容" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_time"
-        style="@style/txt_grey_style"
-        android:padding="@dimen/btn_padding"
-        android:text="时间" />
+        <TextView
+            android:textColor="@color/main_color"
+            android:id="@+id/tv_time"
+            style="@style/txt_grey_style"
+            android:text="时间" />
+
+        <TextView
+            android:layout_marginTop="@dimen/btn_inner_padding"
+            android:id="@+id/tv_content"
+            style="@style/txt_black_style"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="内容" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/btn_margin"
+        android:src="@mipmap/notice_right" />
 </LinearLayout>

@@ -33,4 +33,5 @@
     <dimen name="btn_padding">10dp</dimen>
     <dimen name="btn_inner_padding">5dp</dimen>
     <dimen name="radius">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

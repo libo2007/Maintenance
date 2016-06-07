@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="@dimen/btn_inner_padding"
+    android:layout_marginRight="@dimen/btn_inner_padding"
+    android:layout_marginTop="@dimen/btn_inner_padding"
+    android:orientation="horizontal"
+    android:padding="@dimen/btn_inner_padding">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_cover"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/btn_inner_padding">
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/txt_grey_style"
+            android:text="2015年第一件大事" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/txt_black_style"
+            android:layout_marginTop="@dimen/btn_inner_padding"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:layout_marginTop="@dimen/btn_inner_padding"
+            android:id="@+id/tv_time"
+            android:gravity="center_vertical"
+            style="@style/txt_grey_style"
+            android:textSize="@dimen/txt_normal_small_size"
+            android:drawablePadding="@dimen/btn_inner_padding"
+            android:drawableLeft="@mipmap/task_time"
+            android:text="05-03 12:23:22" />
+    </LinearLayout>
+
+
+</LinearLayout>
